@@ -1,0 +1,33 @@
+<idea-plugin>
+  <id>jp.roundrop.sqlformatter</id>
+  <name>SQL Formatter</name>
+  <version>0.1</version>
+  <vendor email="roundrop@gmail.com" url="https://github.com/roundrop">roundrop</vendor>
+
+  <description><![CDATA[
+      JetBrains IDE plugin for viewing formatted SQL text on tool window.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First release
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="SQL Formatter" anchor="right" factoryClass="SQLFormatterToolWindow" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
